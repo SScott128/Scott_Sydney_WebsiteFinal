@@ -1,0 +1,200 @@
+h1, h2, h3, h4{
+    font-family:"Playfair Display", serif;
+}
+.header {
+    display: flex;
+    background-color: #D5B1B1;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    gap: 20px;
+    padding-right: 50px;
+    padding-left: 20px;
+    font-size: 20px;
+    align-items: center;
+    color: #9F4612;
+    justify-content: space-between;
+    word-spacing: 10px;
+}
+.resturant-pic {
+    position: relative;
+    height: 700px;
+    background-image: url(../images/pencil.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+.pink-line {
+    margin: auto;
+    height: 15px;
+    width: 100%;
+    background-color: #D5B1B1;
+}
+.for-text-box {
+    max-width: 300px;
+    background-color: #9F4612;
+    max-height: 200px;
+    position: absolute;
+    top: 200px;
+}
+.transform-y {
+    transform: translate(950px);
+}
+.padded {
+    padding: 20px;
+}
+.color-white {
+    color: white;
+}
+.max-width {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+.bar {
+    background-color: #D5B1B1;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: row wrap;
+    flex-direction: row;
+}
+.menu-pics {
+    gap: 100px;
+    z-index: 20px;
+    display: flex;
+    justify-content: center;
+}
+.daytime {
+    padding: 10px;
+    align-items: center;
+    font-family: "playfair display", serif;
+    color:#9F4612;
+    text-align: center;
+}
+.box {
+    gap: 20px;
+}
+.come-eat {
+    font-family: "playfair display", serif;
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 40px;
+}
+.come-eat-box {
+    background-color: #9F4612;
+    padding: 5px 10px 5px 10px;
+}
+.image {
+    box-sizing: border-box;
+    flex-basis: 100%;
+    justify-content: center;
+}
+.flex-reverse {
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.michelin {
+    max-width: 250px;
+}
+.voted {
+    flex-direction: row-reverse;
+    font-family:"Playfair Display, serif";
+    padding: 5px;
+    color: #9F4612;
+    padding-left: 2px;
+    justify-content: center;
+}
+.footer {
+    background-color:#D5B1B1;
+    font-family: "Playfair Display", serif;
+    color:#9F4612;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 10px;
+}
+
+/* unvisited link */
+a:link {
+color: #9F4612;
+font-size: 20px;
+text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+color: #9F4612;
+font-size: 20px;
+}
+
+/* mouse over link */
+a:hover {
+color: #9C8C16;
+font-size: 24px;
+}
+
+/* selected link */
+a:active {
+color: #9C8C16;
+font-size: 20px;
+}
+.fade-in {
+    opacity: 0;
+}
+.fade-in.active {
+    animation-name: fade-in;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.rotate {
+    
+}
+.rotate.active {
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes rotate {
+    0% {
+        transform: translateX(950px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(950px) rotate(720deg);
+    }
+}
